@@ -15,7 +15,7 @@ def process_fasta(input_fasta, align=True, output_dir=None):
         Tuple: A tuple containing alignment, output FASTA file, output directory, breed names, and accession numbers.
     """
 
-     seq_records = []
+    seq_records = []
 
     with open(input_fasta, 'r') as file:
         for record in SeqIO.parse(file, 'fasta'):
