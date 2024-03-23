@@ -1,3 +1,8 @@
+from Bio import Phylo
+from Bio.Phylo.TreeConstruction import DistanceCalculator, DistanceTreeConstructor
+import re
+import os
+
 """
 Contains functions for updating tree names.
 """
