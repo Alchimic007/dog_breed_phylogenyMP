@@ -1,3 +1,7 @@
+from Bio import Phylo
+from Bio.Phylo.TreeConstruction import DistanceCalculator, DistanceTreeConstructor
+import os
+
 """
 Contains functions for constructing a phylogenetic tree.
 """
@@ -17,4 +21,3 @@ def construct_phylogenetic_tree(distance_matrix):
     tree = constructor.nj(distance_matrix)
 
     return tree
-
