@@ -12,7 +12,7 @@ def construct_phylogenetic_tree(distance_matrix):
     Returns:
         Phylo.BaseTree.Tree: Phylogenetic tree object.
     """
-    def construct_phylogenetic_tree(distance_matrix):
+    
     constructor = DistanceTreeConstructor()
     tree = constructor.nj(distance_matrix)
 
