@@ -1,3 +1,8 @@
+from Bio import Phylo
+import seaborn as sns
+import matplotlib.pyplot as plt
+import os
+
 """
 Contains functions for visualizing a phylogenetic tree.
 """
