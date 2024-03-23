@@ -1,3 +1,8 @@
+from Bio import AlignIO, SeqIO
+from Bio.Align import MultipleSeqAlignment
+import re
+import os
+
 """
 Contains functions for processing FASTA files.
 """
