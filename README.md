@@ -31,7 +31,7 @@ Visualizes the constructed phylogenetic tree to provide insights into the geneti
 Conducts statistical analysis, including Mann-Whitney U tests, to assess the significance of genetic distances between breeds.
 
 ### File Structure
-
+```bash
 ├── src/
 │   ├── functions/
 │   │   ├── process_fasta.py
@@ -57,13 +57,15 @@ Conducts statistical analysis, including Mann-Whitney U tests, to assess the sig
 │   └── mystery.fa
 │
 └── results/
+```
 
 ## Installation
 
 To install the required dependencies, use pip:
 
-``bash
-pip install -r requirements.txt
+```python
+  pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -75,21 +77,27 @@ To run the main script for performing phylogenetic analysis on real input FASTA 
 2. Clone the repository to your local machine.
 3. Run the phylogeny_main.py file with the following command:
 
-``bash
+```python
 python phylogeny_main.py <input_fasta_file> <unknown_breed_fasta_file>
+```
+<div style="color:red">
+    <strong>Note:</strong> Replace fasta file inputs with your actual data!
+</div>
 
 ### Testing
 Although main script includes some check I reccommend runnung some tests to check functions consistency
 
 To run the tests, execute the following command:
 
-``bash
+```python
 python -m unittest discover -s src/tests -p "test_*.py
+```
 
 Also, you can just run testing master script, with following command:
 
-``bash
+```python
 python phylogeny_test.py
+```
 
 ### Contributors
 Maxim P. - Project Lead
