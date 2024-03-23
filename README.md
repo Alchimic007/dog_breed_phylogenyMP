@@ -40,6 +40,7 @@ Conducts statistical analysis, including Mann-Whitney U tests, to assess the sig
 │   │   ├── update_tree_names.py
 │   │   ├── write_tree_to_file.py
 │   │   ├── calculate_p_values.py
+│   │   ├── plot_bar_chart_and_histogram.py
 │   │   ├── visualize_phylogenetic_tree.py
 │   │   └── __init__.py
 │   │
