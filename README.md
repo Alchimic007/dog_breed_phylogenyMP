@@ -32,39 +32,37 @@ Conducts statistical analysis, including Mann-Whitney U tests, to assess the sig
 
 ### File Structure
 
-src/
+├── src/
+│   ├── functions/
+│   │   ├── process_fasta.py
+│   │   ├── distance_matrix.py
+│   │   ├── phylogenetic_tree.py
+│   │   ├── update_tree_names.py
+│   │   ├── write_tree_to_file.py
+│   │   ├── calculate_p_values.py
+│   │   ├── visualize_phylogenetic_tree.py
+│   │   └── __init__.py
+│   │
+│   ├── classes/
+│   │   ├── clade_with_accession.py
+│   │   └── __init__.py
+│   │
+│   └── test/
+│       ├── test_master_script.py
+│       ├── test_functions.py
+│       └── __init__.py
 │
-├── functions/
-│   ├── process_fasta.py
-│   ├── distance_matrix.py
-│   ├── phylogenetic_tree.py
-│   ├── update_tree_names.py
-│   ├── write_tree_to_file.py
-│   ├── calculate_p_values.py
-│   ├── visualize_phylogenetic_tree.py
-│   └── __init__.py
+├── data/
+│   ├── dog_breeds.fa
+│   └── mystery.fa
 │
-├── classes/
-│   ├── clade_with_accession.py
-│   └── __init__.py
-│
-├── test/
-│   ├── test_master_script.py
-│   ├── test_functions.py
-│   └── __init__.py
-│
-|-- data/
-|   |-- dog_breeds.fa
-|   |-- mystery.fa
-|-- results
-├── main_master_script.py
-└── __init__.py
+└── results/
 
 ## Installation
 
 To install the required dependencies, use pip:
 
-```bash
+``bash
 pip install -r requirements.txt
 
 ## Usage
@@ -77,7 +75,7 @@ To run the main script for performing phylogenetic analysis on real input FASTA 
 2. Clone the repository to your local machine.
 3. Run the phylogeny_main.py file with the following command:
 
-```bash
+``bash
 python phylogeny_main.py <input_fasta_file> <unknown_breed_fasta_file>
 
 ### Testing
@@ -85,12 +83,12 @@ Although main script includes some check I reccommend runnung some tests to chec
 
 To run the tests, execute the following command:
 
-```bash
+``bash
 python -m unittest discover -s src/tests -p "test_*.py
 
 Also, you can just run testing master script, with following command:
 
-```bash
+``bash
 python phylogeny_test.py
 
 ### Contributors
