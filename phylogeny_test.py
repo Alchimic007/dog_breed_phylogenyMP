@@ -1,6 +1,6 @@
 import sys
-from functions import process_fasta, create_distance_matrix, construct_phylogenetic_tree, update_tree_names, write_tree_to_file, calculate_p_values, visualize_phylogenetic_tree
-from classes import CladeWithAccession
+from src.functions import process_fasta, create_distance_matrix, construct_phylogenetic_tree, update_tree_names, write_tree_to_file, calculate_p_values, visualize_phylogenetic_tree
+from src.classes import CladeWithAccession
 
 def test_master_script():
     input_fasta_file = 'data/dog_breeds.fa'
