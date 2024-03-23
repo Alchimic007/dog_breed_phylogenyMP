@@ -1,11 +1,11 @@
 import unittest
-from functions.process_fasta import process_fasta
-from functions.distance_matrix import create_distance_matrix
-from functions.phylogenetic_tree import construct_phylogenetic_tree
-from functions.update_tree_names import update_tree_names
-from functions.write_tree_to_file import write_tree_to_file
-from functions.calculate_p_values import calculate_p_values
-from functions.visualize_phylogenetic_tree import visualize_phylogenetic_tree
+from src.functions.process_fasta import process_fasta
+from src.functions.distance_matrix import create_distance_matrix
+from src.functions.phylogenetic_tree import construct_phylogenetic_tree
+from src.functions.update_tree_names import update_tree_names
+from src.functions.write_tree_to_file import write_tree_to_file
+from src.functions.calculate_p_values import calculate_p_values
+from src.functions.visualize_phylogenetic_tree import visualize_phylogenetic_tree
 
 
 class TestProcessFasta(unittest.TestCase):
