@@ -1,5 +1,7 @@
 import sys
-from src.functions import process_fasta, create_distance_matrix, construct_phylogenetic_tree, update_tree_names, write_tree_to_file, calculate_p_values, visualize_phylogenetic_tree
+import os
+import pandas as pd
+from src.functions import process_fasta, create_distance_matrix, construct_phylogenetic_tree, update_tree_names, write_tree_to_file, calculate_p_values, visualize_phylogenetic_tree, plot_bar_chart_and_histogram 
 from src.classes import CladeWithAccession
 
 def main_master_script():
@@ -66,8 +68,16 @@ def main_master_script():
         df_closeness.to_csv(table_output_file, sep='\t', index=False)
         print(f"Table of Distance to Unknown Breed with p-values saved to: {table_output_file}")
 
+        # Call visualization functions
+        print("Visualizing phylogenetic tree...")
         visualize_phylogenetic_tree(output_tree_file)
+        print(f"Phylogenetic tree visualization saved to: {os.path.join(os.path.dirname(output_tree_file), 'phylogenetic_tree_visualization.png')}")
 
+        print("Visualizing bar chart and histogram...")
+        plot_bar_chart_and_histogram(df_closeness, dog_output_directory, filename_without_extension)
+        print(f"Bar chart and histogram saved to: {os.path.join(dog_output_directory, f'{filename_without_extension}_closeness_distribution_with_names.png')} and {os.path.join(dog_output_directory, f'{filename_without_extension}_distance_distribution.png')}")
+
+        
     except Exception as e:
         print(f"Error: {e}")
 
