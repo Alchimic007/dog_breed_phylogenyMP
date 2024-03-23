@@ -90,7 +90,7 @@ Although main script includes some check I reccommend runnung some tests to chec
 To run the tests, execute the following command:
 
 ```python
-python -m unittest discover -s src/tests -p "test_*.py
+python -m unittest discover -s src/tests -p "test_*.py"
 ```
 
 Also, you can just run testing master script, with following command:
