@@ -6,3 +6,4 @@ from .update_tree_names import update_tree_names
 from .write_tree_to_file import write_tree_to_file
 from .visualize_phylogenetic_tree import visualize_phylogenetic_tree 
 from .calculate_p_values import calculate_p_values
+from .plot_bar_chart_and_histogram import plot_bar_chart_and_histogram
