@@ -89,8 +89,13 @@ Although main script includes some check I reccommend runnung some tests to chec
 To run the tests, execute the following command:
 
 ```python
-python -m unittest discover -s src/tests -p "test_functions.py"
+python tests.py
 ```
+
+<div style="color:red">
+    <strong>Note:</strong> the results of the test should appear in src/test directory.
+</div>
+
 
 Also, you can just run testing master script, with following command:
 
