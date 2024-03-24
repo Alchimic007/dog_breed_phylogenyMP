@@ -92,9 +92,7 @@ To run the tests, execute the following command:
 python tests.py
 ```
 
-<div style="color:red">
-    <strong>Note:</strong> the results of the test should appear in src/test directory.
-</div>
+**Note**:</strong> the results of the test should appear in src/test directory.
 
 
 Also, you can just run testing master script, with following command:
