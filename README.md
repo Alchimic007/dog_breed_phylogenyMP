@@ -48,8 +48,7 @@ Conducts statistical analysis, including Mann-Whitney U tests, to assess the sig
 │   │   ├── clade_with_accession.py
 │   │   └── __init__.py
 │   │
-│   └── test/
-│       ├── test_functions.py
+│   └── tests/
 │       └── __init__.py
 │
 ├── data/
